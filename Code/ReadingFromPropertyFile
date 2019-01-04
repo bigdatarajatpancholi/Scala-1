@@ -12,7 +12,7 @@ object propfilesample {
     // properties.load(reader)
 
     //for reading the properties file from external source ue below statement
-    properties.load(new FileInputStream("C:/Users/Ashish/Desktop/job.properties"))
+    properties.load(new FileInputStream("$PATH$/job.properties"))
 
     print(properties.get("SOURCE_FILE_PATH"))
     print(properties.get("DEMO_TEST"))

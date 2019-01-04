@@ -1,0 +1,21 @@
+import java.io.FileInputStream
+import java.util.Properties
+import scala.io.Source.fromURL
+
+object propfilesample {
+  def main(args: Array[String]): Unit ={
+    var properties : Properties = null
+    properties = new Properties()
+
+    val reader = fromURL(getClass.getResource("job.properties")).bufferedReader()
+    //for reading from  resources folder use below statement
+    // properties.load(reader)
+
+    //for reading the properties file from external source ue below statement
+    properties.load(new FileInputStream("C:/Users/Ashish/Desktop/job.properties"))
+
+    print(properties.get("SOURCE_FILE_PATH"))
+    print(properties.get("DEMO_TEST"))
+  }
+
+}

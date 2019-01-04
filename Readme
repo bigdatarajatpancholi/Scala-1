@@ -1,1 +1,7 @@
-1. ReadingFromPropertyFile: Reads property file from reource folder or user defined path.
+* ReadingFromPropertyFile: Reads property file from reource folder or user defined path.
+
+* Forloop: For loop example
+
+* MatchCase: Match case example
+
+* ifelsedemo: If else example
